@@ -1,77 +1,197 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=yellow-black, initial-yellow=1.0">
-    <title>Accueil - DINACOPE</title>
-    <link rel="stylesheet"form{
- width: 100%;
- background-color: rgba(220,220,0,0.2);
- padding : 5px 0px;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mon Université</title>
+    <link rel="stylesheet" href="style.css">
+<style>/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color:chocolate;
+    color:yellow ;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    text-align: center;
 }
-.c100{
- width: 100%;
- margin: 20px;
+
+header h1 {
+    margin: 0;
+    padding-bottom: 10px;
 }
-label{
- display: inline-block;
- min-width: 25%;
+
+header nav ul {
+    padding: 0;
+    list-style: none;
 }
-input[type="submit"]{
- color: RGB(200,100,0);
- border-radius: 5px;
- padding: 5px 10px;
- font-size: 14px;
- border: 2px solid RGB(200,100,0);
+
+header nav ul li {
+    display: inline;
+    padding: 0 15px;
 }
-input[type="submit"]:hover{
- background-color: RGB(200,100,0);
- color: #f href="style.css">
+
+header nav a {
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+    margin: auto;
+    width: 80%;
+}
+
+section {
+    background: violet;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2, section h3 {
+    color: red;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background: violet;
+    padding: 50px 20px;
+    border-radius: 8px;
+}
+
+#hero h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: red;
+    color: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background: red;
+}
+
+.button:hover {
+    background: yellow;
+}
+
+/* Quick Links Section */
+#quick-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#quick-links ul li {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    text-align: center;
+    background: yellow;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#quick-links ul li a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+#quick-links ul li a:hover {
+    color: green;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: yellow;
+    color: green;
+    margin-top: 20px;
+} </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-        <marquee behavior= "jump" > <h1><h1 style="color:blue;">CONTROLE PHYSIQUE </h1> </marquee>
+            <h1> <mark> <marquee behavior="">BIENVENUE A L'UPKAN</marquee></mark></h1>
             </div>
-      <p> <img src="rdc.gif" width="200" height="100"></p>
         <nav>
-            <u>
-                <p>
+		
+		<p>
+		<img src="rdc.gif" width= "300" height="100"/>
+		</p>
+		
+            <ul>
                 <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="enregistrer.html">ENREGITREMENT</a></li>
-                <li><a href="pointer.html">POINTAGE</a></li>
-                <li><a href="rapport.html">RAPPORT</a></li>
-                </p>
+                <li><a href="inscription.html">INSCRIPTION</a></li>
+                <li><a href="facultes.html">FACULTÉS</a></li>
+                <li><a href="liste.html">LISTE DES MEMBRES DU GROUPE</a></li>
+		               <li><a href="sport.html">SPORT</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>       
+    <main>
         <section id="hero">
-            <h2><h2 style="color:blue;">DINACOPE</h2>  <p> <img src=1.jpg width="220" height="250"></p>
-            <p>Découvrez mes programmes, en appuyant sur 'OK' grace à mon site dynamique</p>
-            <a href="OK.html" class="button">OK</a>
+            <h2>Votre avenir commence ici !</h2>
+            <p>Découvrez nos programmes, nos facultés et la vie éstudiantine dynamique.</p>
+            <a href="inscription.html" class="button">Inscrivez-vous dès maintenant</a>
         </section>
 
+		<img src="UPKAN.jpg" width= "300" height="300"/>
+		
         <section id="quick-links">
-<marquee behavior= "alternate" > <h3>ACCES RAPIDE</h3> </marquee>
+            <h3><mark><marquee behavior="alternate">Accès rapide</marquee></mark></h3>
             <ul>
-              <p> <img src=rdc.gif width="285" height="200"></p> 
-                <li><a href="enregistrement.html">dernier enregistrement</a></li>
-                <li><a href="pointage.html">Activités des pointages</a></li>
+                <li><a href="inscription.html">Formulaire d'Inscription</a></li>
+                <li><a href="facultes.html">Explorer nos Facultés</a></li>
+                <li><a href="liste.html">Actualité du groupe(les noms)</a></li>
+		   <li><a href="photos.html">photos des membres du groupe</a></li>
             </ul>
         </section>
 
         <section id="about">
- <h3>À propos de moi</h3>
-            <p> <img src=2.jpg width="250" height="200"></p>
-   <marquee behavior= "alternate" ><p>controle physique des enseignants et administratifs scolaires.</p></marquee> 
+            <h3>À propos de nous</h3>
+            <p>Mon Université est un établissement d'enseignement supérieur de premier plan, dédié à l'excellence académique, à la recherche innovante et au développement personnel de nos étudiants. Nous offrons un environnement stimulant où les étudiants peuvent atteindre leur plein potentiel.</p>
         </section>
     </main>
+	<nav>
+  <a href="inscription.html">Précédent</a>
+    </nav>
+
 
     <footer>
-        <p> <img src=3.jpg width="280" height="200"></p>
-        <p><h1 style="color:violet;"> ALBERT PM</p>
+        <p>&copy; NTAMBUE MALAMBA ALBERT</p>
     </footer>
 </body>
 </html>
