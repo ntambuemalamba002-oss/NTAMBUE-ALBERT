@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+ <link rel="stylesheet" href="style.css">
+ <title>Document</title>
+ </head>
+ <body>
+ <h1>ENREGISTREMENT DES MALADES </h1>
+ <form action="formulaire4.php" method="post">
+ <div class="c100">
+ <label for="numCl">NUMERO Malade : </label>
+ <input type="text" id="num" name="id">
+ </div> 
+ <div class="c100">
+ <label for="nom">NOM Malade : </label>
+ <input type="text" id="nomCl" name="nom">
+ </div>
+ <div class="c100">
+ <label for="postnom">POSTNOM Malade : </label>
+ <input type="text" id="postnom" name="postnom">
+ </div>
+ <div class="c100">
+ <label for="prenom">PRENOM Malade : </label>
+ <input type="text" id="prenom" name="prenom">
+ </div>
+ <div class="c100" id="submit" id="reset">
+ <input type="submit" value="Envoyer" name="submit">
+ <input type="submit" value="Afficher" name="display">
+ <input type="reset" value="Annuler">
+ </div>
+ </form>
+ </body>
+</html>
